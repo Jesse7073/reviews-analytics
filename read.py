@@ -15,3 +15,10 @@ for m in data:
 average_len = sum_len/len(data)
 
 print('平均每筆留言有', average_len, '個字')
+
+new = []
+for w in data:
+    if len(w) < 100:
+        new.append(w)
+
+print('有', len(new), '筆資料長度小於100')
